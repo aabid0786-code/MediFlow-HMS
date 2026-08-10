@@ -69,7 +69,7 @@ Authorization:`Bearer ${token}`
 
 const pRes = await fetch(
 
-"http://localhost:5000/api/patients",
+"https://mediflow-hms-ufsa.onrender.com/api/patients",
 
 {
 headers
@@ -89,7 +89,7 @@ setPatients(pData.patients || []);
 
 const dRes = await fetch(
 
-"http://localhost:5000/api/doctors",
+"https://mediflow-hms-ufsa.onrender.com/api/doctors",
 
 {
 headers
@@ -112,7 +112,7 @@ setDoctors(dData.doctors || []);
 
 const aRes = await fetch(
 
-"http://localhost:5000/api/appointments",
+"https://mediflow-hms-ufsa.onrender.com/api/appointments",
 
 {
 headers
@@ -136,7 +136,7 @@ setAppointments(aData.appointments || []);
 
 const prRes = await fetch(
 
-"http://localhost:5000/api/prescriptions",
+"https://mediflow-hms-ufsa.onrender.com/api/prescriptions",
 
 {
 headers
@@ -291,12 +291,8 @@ try{
 
 const url = editMode
 
-?
-`http://localhost:5000/api/prescriptions/${editId}`
-
-:
-
-"http://localhost:5000/api/prescriptions";
+? `http://localhost:5000/api/prescriptions/${editId}`
+  : "http://localhost:5000/api/prescriptions";
 
 
 
@@ -474,7 +470,7 @@ if(!window.confirm("Delete Prescription?")) return;
 
 const res = await fetch(
 
-`http://localhost:5000/api/prescriptions/${id}`,
+`https://mediflow-hms-ufsa.onrender.com/api/prescriptions/${id}`,
 
 {
 
