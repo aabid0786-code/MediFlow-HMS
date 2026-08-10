@@ -46,7 +46,7 @@ try{
 
 const patientRes = await fetch(
 
-"http://localhost:5000/api/patients",
+"https://mediflow-hms-ufsa.onrender.com/api/patients",
 
 {
 
@@ -74,7 +74,7 @@ setPatients(patientData.patients || []);
 
 const doctorRes = await fetch(
 
-"http://localhost:5000/api/doctors",
+"https://mediflow-hms-ufsa.onrender.com/api/doctors",
 
 {
 
@@ -103,7 +103,7 @@ setDoctors(doctorData.doctors || []);
 
 const appointmentRes = await fetch(
 
-"http://localhost:5000/api/appointments",
+"https://mediflow-hms-ufsa.onrender.com/api/appointments",
 
 {
 
@@ -171,7 +171,7 @@ try{
 
 const res = await fetch(
 
-"http://localhost:5000/api/appointments",
+"https://mediflow-hms-ufsa.onrender.com/api/appointments",
 
 {
 
@@ -263,7 +263,7 @@ const deleteAppointment = async(id)=>{
 
 await fetch(
 
-`http://localhost:5000/api/appointments/${id}`,
+`https://mediflow-hms-ufsa.onrender.com/api/appointments/${id}`,
 
 {
 
