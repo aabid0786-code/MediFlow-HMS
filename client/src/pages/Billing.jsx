@@ -42,7 +42,7 @@ const Billing = () => {
 
 
       const patientRes = await fetch(
-        "http://localhost:5000/api/patients",
+        "https://mediflow-hms-ufsa.onrender.com/api/patients",
         { headers }
       );
 
@@ -52,7 +52,7 @@ const Billing = () => {
 
 
       const doctorRes = await fetch(
-        "http://localhost:5000/api/doctors",
+        "https://mediflow-hms-ufsa.onrender.com/api/doctors",
         { headers }
       );
 
@@ -62,7 +62,7 @@ const Billing = () => {
 
 
       const appointmentRes = await fetch(
-        "http://localhost:5000/api/appointments",
+        "https://mediflow-hms-ufsa.onrender.com/api/appointments",
         { headers }
       );
 
@@ -75,7 +75,7 @@ const Billing = () => {
 
       // IMPORTANT: /api/billing
       const billingRes = await fetch(
-        "http://localhost:5000/api/billing",
+        "https://mediflow-hms-ufsa.onrender.com/api/billing",
         { headers }
       );
 
@@ -172,9 +172,9 @@ const Billing = () => {
 
       const url = editId
 
-        ? `http://localhost:5000/api/billing/${editId}`
+        ? `https://mediflow-hms-ufsa.onrender.com/api/billing/${editId}`
 
-        : "http://localhost:5000/api/billing";
+        : "https://mediflow-hms-ufsa.onrender.com/api/billing";
 
 
       const method = editId ? "PUT" : "POST";
@@ -331,7 +331,7 @@ const Billing = () => {
     try {
 
       const res = await fetch(
-        `http://localhost:5000/api/billing/${id}`,
+        `https://mediflow-hms-ufsa.onrender.com/api/billing/${id}`,
         {
           method: "DELETE",
           headers: {
