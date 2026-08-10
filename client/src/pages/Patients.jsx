@@ -39,7 +39,7 @@ try{
 
 const res = await fetch(
 
-"http://localhost:5000/api/patients",
+"https://mediflow-hms-ufsa.onrender.com/api/patients",
 
 {
 
@@ -101,7 +101,7 @@ try{
 
 const res = await fetch(
 
-"http://localhost:5000/api/patients",
+"https://mediflow-hms-ufsa.onrender.com/api/patients",
 
 {
 
@@ -206,7 +206,7 @@ try{
 
 await fetch(
 
-`http://localhost:5000/api/patients/${id}`,
+`https://mediflow-hms-ufsa.onrender.com/api/patients/${id}`,
 
 {
 
