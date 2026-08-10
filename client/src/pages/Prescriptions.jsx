@@ -290,9 +290,8 @@ try{
 
 
 const url = editMode
-
-? `http://localhost:5000/api/prescriptions/${editId}`
-  : "http://localhost:5000/api/prescriptions";
+  ? `https://mediflow-hms-ufsa.onrender.com/api/prescriptions/${editId}`
+  : "https://mediflow-hms-ufsa.onrender.com/api/prescriptions";
 
 
 
