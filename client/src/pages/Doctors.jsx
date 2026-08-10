@@ -42,7 +42,7 @@ const Doctors = () => {
 
       const res = await fetch(
 
-        "http://localhost:5000/api/doctors",
+        "https://mediflow-hms-ufsa.onrender.com/api/doctors",
 
         {
 
@@ -109,7 +109,7 @@ const Doctors = () => {
 
       const res = await fetch(
 
-        "http://localhost:5000/api/doctors",
+        "https://mediflow-hms-ufsa.onrender.com/api/doctors",
 
         {
 
@@ -223,7 +223,7 @@ const Doctors = () => {
 
       await fetch(
 
-        `http://localhost:5000/api/doctors/${id}`,
+        `https://mediflow-hms-ufsa.onrender.com/api/doctors/${id}`,
 
         {
 
