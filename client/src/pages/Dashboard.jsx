@@ -27,7 +27,7 @@ const Dashboard = () => {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/dashboard",
+        "https://mediflow-hms-ufsa.onrender.com/api/dashboard",
         {
           headers:{
             Authorization:`Bearer ${localStorage.getItem("token")}`
@@ -60,7 +60,7 @@ const Dashboard = () => {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/dashboard/recent",
+        "https://mediflow-hms-ufsa.onrender.com/api/dashboard/recent",
         {
           headers:{
             Authorization:`Bearer ${localStorage.getItem("token")}`
