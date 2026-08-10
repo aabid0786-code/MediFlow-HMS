@@ -34,7 +34,7 @@ setLoading(true);
 
 
 const res = await fetch(
-"http://localhost:5000/api/auth/login",
+"https://mediflow-hms-ufsa.onrender.com/api/auth/login",
 {
 method:"POST",
 headers:{
@@ -144,7 +144,7 @@ Email / Mobile
 
 type="text"
 
-placeholder="admin@mediflow.com"
+placeholder="Enter your email"
 
 value={login}
 
@@ -167,7 +167,7 @@ Password
 
 type="password"
 
-placeholder="123456"
+placeholder="Enter your password"
 
 value={password}
 
